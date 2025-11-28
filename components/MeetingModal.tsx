@@ -51,7 +51,7 @@ const MeetingModal = ({
           {children}
 
           <Button
-            className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0 hover:bg-blue-2 cursor-pointer"
             onClick={handleClick}
           >
             {buttonIcon && (
@@ -61,7 +61,8 @@ const MeetingModal = ({
                 height={13}
                 alt="button icon"
               />
-            )} &nbsp;
+            )}{" "}
+            &nbsp;
             {buttonText || "Schedule Meeting"}
           </Button>
         </div>
